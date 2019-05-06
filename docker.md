@@ -1,5 +1,10 @@
 # Docker
 
+## Build & Run
+
+* Build image: `docker build -t <tag> <path>`
+* Run container: `docker run <image>`
+
 ## General
 * List running containers: `docker ps`
 * List all containers: `docer ps -a`
