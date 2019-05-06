@@ -3,7 +3,7 @@
 ## Build & Run
 
 * Build image: `docker build -t <tag> <path>`
-* Run container: `docker run <image>`
+* Run container: `docker run -p <host-port>:<container-port> <image>`
 
 ## General
 * List running containers: `docker ps`
