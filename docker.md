@@ -3,7 +3,8 @@
 ## Build & Run
 
 * Build image: `docker build -t <tag> <path>`
-* Run container: `docker run -p <host-port>:<container-port> <image>`
+* Run container: `docker run --rm -p <host-port>:<container-port> <image>`
+* Stop container: `docker stop <name>`
 
 ## General
 * List running containers: `docker ps`
