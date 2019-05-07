@@ -7,6 +7,7 @@
 * Stop container: `docker stop <name>`
 
 ## General
+* Stop all running containers: `docker stop $(docker ps -q)`
 * List running containers: `docker ps`
 * List all containers: `docer ps -a`
 * Delete container `docker rm <container>`
