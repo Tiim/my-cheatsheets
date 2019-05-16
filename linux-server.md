@@ -27,8 +27,11 @@ apt install sudo
 # overwrite sudoers file
 ```
 
-https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604
 ## SSH keys
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604
+
+
 ```
 # on your local machiene
 ssh-copy-id tim@remote_host
