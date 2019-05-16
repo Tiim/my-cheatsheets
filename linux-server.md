@@ -24,5 +24,30 @@ sudo echo hallo
 apt install sudo
 # overwrite sudoers file
 ```
+
+```
+# on your local machiene
+ssh-copy-id tim@remote_host
+
+# test key based login
+ssh tim@remote_host
+```
+
+## Diable password on server
+
+```
+sudo nano /etc/ssh/sshd_config
+
+# set to
+...
+PasswordAuthentication no
+...
+
+# restart ssh server
+sudo systemctl restart ssh
+
+# test new connection
+```
+
 https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart
 https://www.scaleway.com/en/docs/how-to-install-docker-community-edition-ubuntu-bionic-beaver/
