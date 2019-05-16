@@ -128,7 +128,7 @@ https://github.com/exoframejs/exoframe/blob/master/docs/ServerConfiguration.md
 
 
 ```sh
-export PRIVATE_KEY=json-web-token-private-key-ASDF1234<private key>
+export PRIVATE_KEY=<private key>
 
 docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
