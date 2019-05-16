@@ -124,3 +124,24 @@ sudo systemctl enable docker
 ## Install Exoframe
 
 https://github.com/exoframejs/exoframe/blob/master/docs/ServerInstallation.md
+https://github.com/exoframejs/exoframe/blob/master/docs/ServerConfiguration.md
+
+
+```sh
+export PRIVATE_KEY=json-web-token-private-key-ASDF1234<private key>
+
+docker run -d \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /var/exoframe:/root/.exoframe \
+  -v /home/tim/.ssh/authorized_keys:/root/.ssh/authorized_keys:ro \
+  -e EXO_PRIVATE_KEY=$PRIVATE_KEY \
+  --label traefik.backend=exoframe-server \
+  --label traefik.frontend.rule=Host:exo.demo.tiimb.work \
+  --restart always \
+  --name exoframe-server \
+  exoframe/server
+  
+  
+# edit server.config.yml
+vim /var/exoframe/server.config.yml
+```
