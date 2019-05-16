@@ -7,18 +7,19 @@ https://www.scaleway.com/en/docs/create-and-connect-to-your-server/
 mkdir /etc/init/
 echo manual > /etc/init/ssh-keys.override
 ```
+
 ## Init
 
-```
+```sh
 apt-get update
 apt-get upgrade
 ```
 
 ## Adding new user
 
-
 https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart
-```
+
+```sh
 adduser tim
 
 # add to sudo group
@@ -37,8 +38,7 @@ apt install sudo
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604
 
-
-```
+```sh
 # on your local machiene
 ssh-copy-id tim@remote_host
 
@@ -48,8 +48,7 @@ ssh tim@remote_host
 
 ## Diable password on server
 
-
-```
+```sh
 sudo nano /etc/ssh/sshd_config
 
 # set to
@@ -62,11 +61,12 @@ sudo systemctl restart ssh
 
 # test new connection
 ```
+
 ## Run sudo without password (optional)
 
 https://phpraxis.wordpress.com/2016/09/27/enable-sudo-without-password-in-ubuntudebian/
 
-```
+```sh
 sudo visudo
 
 # at the end add line
@@ -77,10 +77,10 @@ sudo echo hallo
 ```
 
 ## Install Docker
+
 https://www.scaleway.com/en/docs/how-to-install-docker-community-edition-ubuntu-bionic-beaver/
 
-
-```
+```sh
 # remove old version
 sudo apt-get remove docker docker-engine docker.io
 
