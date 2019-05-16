@@ -7,6 +7,12 @@ https://www.scaleway.com/en/docs/create-and-connect-to-your-server/
 mkdir /etc/init/
 echo manual > /etc/init/ssh-keys.override
 ```
+## Init
+
+```
+apt-get update
+apt-get upgrade
+```
 
 ## Adding new user
 
@@ -56,6 +62,46 @@ sudo systemctl restart ssh
 
 # test new connection
 ```
+## Run sudo without password (optional)
+
+https://phpraxis.wordpress.com/2016/09/27/enable-sudo-without-password-in-ubuntudebian/
+
+```
+sudo visudo
+
+# at the end add line
+tim     ALL=(ALL) NOPASSWD:ALL
+
+# check if it worked
+sudo echo hallo
+```
 
 ## Install Docker
 https://www.scaleway.com/en/docs/how-to-install-docker-community-edition-ubuntu-bionic-beaver/
+
+
+```
+# remove old version
+sudo apt-get remove docker docker-engine docker.io
+
+# HTTPS for docker repository
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+
+# Add Docker’s official SSH key to apt
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# verify the fingerprint of the key (9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88), by looking at the last 8 characters
+sudo apt-key fingerprint 0EBFCD88
+
+# Add the repository for the stable version of Docker. For a x86_64 based server, use the following command
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+#Update the apt packet cache
+sudo apt-get update
+
+# Install the latest version of Docker
+sudo apt-get install docker-ce
+
+# Verify that Docker has been installed by running the Hello World container
+sudo docker run hello-world
+```
