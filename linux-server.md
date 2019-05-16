@@ -104,4 +104,19 @@ sudo apt-get install docker-ce
 
 # Verify that Docker has been installed by running the Hello World container
 sudo docker run hello-world
+
+# Create the docker group.
+sudo groupadd docker
+
+# Add your user to the docker group.
+sudo usermod -aG docker $USER
+
+# logout
+exit
+
+#Verify that you can run docker commands without sudo by downloading a test-image and running it in a container
+docker run hello-world
+
+# Run docker on startup
+sudo systemctl enable docker
 ```
