@@ -120,3 +120,7 @@ docker run hello-world
 # Run docker on startup
 sudo systemctl enable docker
 ```
+
+## Install Exoframe
+
+https://github.com/exoframejs/exoframe/blob/master/docs/ServerInstallation.md
