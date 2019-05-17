@@ -136,7 +136,7 @@ docker run -d \
   -v /home/tim/.ssh/authorized_keys:/root/.ssh/authorized_keys:ro \
   -e EXO_PRIVATE_KEY=$PRIVATE_KEY \
   --label traefik.backend=exoframe-server \
-  --label traefik.frontend.rule=Host:exo.demo.tiimb.work \
+  --label traefik.frontend.rule=Host:exo.tiimb.work \
   --restart always \
   --name exoframe-server \
   exoframe/server
