@@ -8,4 +8,5 @@
 
 ## Cleanup
 
-* Delete containers: `docker-compose rm`
+* Delete containers: `docker-compose rm -f` \
+   `-f` Don't ask to confirm removal
