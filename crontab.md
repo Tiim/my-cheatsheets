@@ -15,7 +15,9 @@
 ```
 
 `*` = every
-`*/n` = every n
+
+`*/n` = every n.
+
 `x,y,z` = every x, y, z
 
 ### Examples
