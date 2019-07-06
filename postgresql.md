@@ -6,7 +6,8 @@
 
 * Starting docker `docker-compose up --build`
 * Find docker container name of postgres container: `docker ps --format '{{.Names}}' | grep postgres`
-* Enter postgres container `docker exec -it postgres psql -U postgres`
+* Enter postgres container `docker exec -it postgres-container psql -U postgres`
+* OR EASYER: `docker exec -it $(docker ps --format '{{.Names}}' | grep postgres) psql -U postgres`
 * Connect `\c <database_name>`
 * List tables `\d`
 * List table `\d+ <table_name>`
