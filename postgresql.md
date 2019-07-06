@@ -5,6 +5,7 @@
 [Source](https://github.com/Radu-Raicea/Dockerized-Flask/wiki/%5BDocker%5D-Access-the-PostgreSQL-command-line-terminal-through-Docker)
 
 * Starting docker `docker-compose up --build`
+* Find docker container name of postgres container: `docker ps --format '{{.Names}}' | grep postgres`
 * Enter postgres container `docker exec -it postgres psql -U postgres`
 * Connect `\c <database_name>`
 * List tables `\d`
