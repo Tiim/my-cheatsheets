@@ -10,3 +10,16 @@
 * List tables `\d`
 * List table `\d+ <table_name>`
 * Exit `\q`
+
+
+## Insert or Update
+
+Use `ON CONFLICT ("rownameOfConflictingKey") DO UPDATE SET "row" = EXCLUDED."row"`
+
+Example
+```sql
+INSERT INTO goal ("groupLevel", "desc")
+      VALUES (?, ?)
+      ON CONFLICT ("groupLevel")
+      DO UPDATE SET "desc" = EXCLUDED."desc"
+```
