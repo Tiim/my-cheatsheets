@@ -81,6 +81,8 @@ prompt_dir() {
 
 ### Nodejs
 
+check linke [here](https://github.com/nvm-sh/nvm#installation-and-update)
+
 ```sh
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
