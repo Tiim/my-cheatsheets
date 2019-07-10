@@ -69,6 +69,10 @@ set THEME="agnoster"
 append ath the end of .zshrc
 
 ```sh
+# make readable ls colors
+LS_COLORS="ow=01;36;40" && export LS_COLORS 
+
+# change promt context and prompt dir 
 prompt_context() {
   prompt_segment black default  "★  "
 }
