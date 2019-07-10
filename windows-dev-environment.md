@@ -78,6 +78,12 @@ prompt_dir() {
 }
 ```
 
+Download and install Hack font on windows
+
+https://github.com/source-foundry/Hack
+
+add `Hack` in front of the font array of ~/.hyper.js on windows
+
 
 ### Nodejs
 
@@ -93,12 +99,6 @@ nvm install --lts
 
 npm i -g npm
 ```
-
-Download and install Hack font on windows
-
-https://github.com/source-foundry/Hack
-
-add `Hack` in front of the font array of ~/.hyper.js on windows
 
 ### Docker Cli
 
