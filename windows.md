@@ -1,4 +1,10 @@
 # Windows
+
+## Shortcuts
+
+* Screenshot: `[Win] + [Shift] + S`
+* Emoji Menu `[Win] + .`
+
 ## Disable automatic unwanted apps instalation (Candy Crush etc)
 
 Turn off Microsoft Consumer Experience
