@@ -37,10 +37,11 @@ sudo apt upgrade
 ### Git
 
 ```sh
-sudo apt install git
+sudo apt install git vim
 
 git config --global user.name "Tiim"
 git config --global user.email "tim.bachmann96@gmail.com"
+git config --global core.editor "vim"
 
 # either create new rsa key
 ssh-keygen -t rsa -b 4096 -C "tim.bachmann96@gmail.com"
