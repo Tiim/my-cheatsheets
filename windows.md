@@ -2,6 +2,7 @@
 
 ## Shortcuts
 
+* Task-Manager: `[Ctrl] + [Shift] + [Esc]`
 * Screenshot: `[Win] + [Shift] + S`
 * Emoji Menu `[Win] + .`
 
