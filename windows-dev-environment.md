@@ -169,6 +169,22 @@ options = "metadata"
 
 [See Here](https://github.com/docker/compose/releases)
 
+## Install Go
+
+[Download Here](https://golang.org/dl/)
+
+[Instructions Here](https://golang.org/doc/install)
+
+```sh
+cd /tmp/
+# see newest version here:
+# https://golang.org/dl/
+curl https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz --output go1.12.7.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.12.7.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.zshrc
+rm go1.12.7.linux-amd64.tar.gz
+cd -
+```
 
 ## Install VS Code
 
