@@ -26,3 +26,10 @@ INSERT INTO goal ("groupLevel", "desc")
       ON CONFLICT ("groupLevel")
       DO UPDATE SET "desc" = EXCLUDED."desc"
 ```
+
+### Delete
+
+```sql
+DELETE FROM "table"
+WHERE "table"."id" = ? AND …
+```
