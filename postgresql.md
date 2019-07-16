@@ -13,8 +13,9 @@
 * List table `\d+ <table_name>`
 * Exit `\q`
 
+## Syntag
 
-## Insert or Update
+### Insert or Update (Upsert)
 
 Use `ON CONFLICT ("rownameOfConflictingKey") DO UPDATE SET "row" = EXCLUDED."row"`
 
