@@ -29,7 +29,16 @@ INSERT INTO goal ("groupLevel", "desc")
 
 ### Delete
 
+Ordinary delete:
 ```sql
 DELETE FROM "table"
 WHERE "table"."id" = ? AND …
+```
+
+With a joined table:
+
+```sql
+DELETE FROM "table"
+USING "another_table"
+WHERE "table"."id" = "another_table"."id" AND …
 ```
