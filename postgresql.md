@@ -42,3 +42,13 @@ DELETE FROM "table"
 USING "another_table"
 WHERE "table"."id" = "another_table"."id" AND …
 ```
+
+### UPDATE
+
+```sql
+UPDATE "table"
+SET "column1" = value1,
+    "column2" = value2 ,...
+WHERE
+   condition;
+```
