@@ -136,13 +136,13 @@ https://github.com/exoframejs/exoframe/blob/master/docs/ServerConfiguration.md
 
 
 ```sh
-export PRIVATE_KEY=<private key>
+export EXO_PRIVATE_KEY=<private key>
 
 docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /var/exoframe:/root/.exoframe \
   -v /home/tim/.ssh/authorized_keys:/root/.ssh/authorized_keys:ro \
-  -e EXO_PRIVATE_KEY=$PRIVATE_KEY \
+  -e EXO_PRIVATE_KEY=$EXO_PRIVATE_KEY \
   --label traefik.backend=exoframe-server \
   --label traefik.frontend.rule=Host:exo.tiimb.work \
   --restart always \
