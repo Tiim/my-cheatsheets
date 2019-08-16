@@ -51,9 +51,17 @@ ssh tim@remote_host
 ```sh
 sudo nano /etc/ssh/sshd_config
 
+## For all users
 # set to
 ...
 PasswordAuthentication no
+...
+
+## For all users except root
+# set to
+...
+Match User !root
+    PasswordAuthentication no
 ...
 
 # restart ssh server
