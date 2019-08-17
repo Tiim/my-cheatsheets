@@ -12,6 +12,7 @@
 * Copy file from container to host: `docker cp container_id:/foo.txt foo.txt`
 
 ## General
+* Run a shell inside the container: `docker exec -i -t container sh`
 * Stop all running containers: `docker stop $(docker ps -q)`
 * List running containers: `docker ps`
 * List all containers: `docer ps -a`
