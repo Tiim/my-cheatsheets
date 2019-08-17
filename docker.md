@@ -6,6 +6,10 @@
 * Run container: `docker run --rm -p <host-port>:<container-port> <image>`
 * Stop container: `docker stop <name>`
 
+## Files
+* Copy file from container to host: `docker cp foo.txt container_id:/foo.txt`
+* Copy file from host to container: `docker cp container_id:/foo.txt foo.txt`
+
 ## General
 * Stop all running containers: `docker stop $(docker ps -q)`
 * List running containers: `docker ps`
