@@ -179,10 +179,17 @@ options = "metadata"
 cd /tmp/
 # see newest version here:
 # https://golang.org/dl/
-curl https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz --output go1.12.7.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.12.7.linux-amd64.tar.gz
+export GOVERSION="1.12.9"
+curl https://dl.google.com/go/go$GOVERSION.linux-amd64.tar.gz --output go$GOVERSION.linux-amd64.tar.gz
+
+# clean old go install
+sudo rm -rf /usr/local/go
+
+sudo tar -C /usr/local -xzf go$GOVERSION.linux-amd64.tar.gz
+
+# skip when updating go
 echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.zshrc
-rm go1.12.7.linux-amd64.tar.gz
+rm go$GOVERSION.linux-amd64.tar.gz
 cd -
 ```
 
