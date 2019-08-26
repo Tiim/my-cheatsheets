@@ -30,3 +30,9 @@
 
 * List all volumes: `docker volume ls`
 * Inspect specific volume: `docker run --rm -i -v=VOLUMENAME:/tmp/volume:ro busybox sh`
+* Copy file from volume to host: 
+```sh
+export VOLUME=backups
+export FILE=backup/2019-08-26_08_00_00.gz
+docker run --rm -i -v=$VOLUMENAME:/volume:ro -v=$(pwd):/output busybox cp /volume/$FILE /output
+```
