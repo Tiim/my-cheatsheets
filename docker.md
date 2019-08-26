@@ -25,3 +25,8 @@
 * Delete all stopped containers: `docker rm $(docker ps -a -q)`
 * Delete all images: `docker rmi $(docker images -q)` 
 * Delete all unused data: `docker system prune`
+
+## Volumes
+
+* List all volumes: `docker volume ls`
+* Inspect specific volume: `docker run --rm -i -v=VOLUMENAME:/tmp/volume:ro busybox sh`
