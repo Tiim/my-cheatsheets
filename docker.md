@@ -36,3 +36,14 @@ export VOLUME=backups
 export FILE=backup/2019-08-26_08_00_00.gz
 docker run --rm -i -v=$VOLUMENAME:/volume:ro -v=$(pwd):/output busybox cp /volume/$FILE /output
 ```
+
+
+## Troubleshooting
+
+`ERROR: readlink /var/lib/docker/overlay2: invalid argument`
+
+Possibly a corrupted image: run `docker rmi $(docker images -q)` to delete all images
+
+`Port already in use`
+
+Restart docker, restart windows
