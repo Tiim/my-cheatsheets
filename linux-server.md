@@ -153,3 +153,35 @@ docker run -d \
 # edit server.config.yml
 vim /var/exoframe/server.config.yml
 ```
+
+## Setup Docker logging
+
+### Loggly Syslog
+
+[Setup](https://www.loggly.com/docs/sending-logs-unixlinux-system-setup/)
+
+Filtering the logs
+
+```rsyslog
+# only send if the program name starts with docker-
+if re_match($programname,'docker-.*')
+then
+{
+# Send messages to Loggly over TCP using the template.
+action(type="omfwd" protocol="tcp" target="logs-01.loggly.com" port="6514" template="LogglyFormat" StreamDriver="gtls" StreamDriverMode="1" StreamDriverAuthMode="x509/name" StreamDriverPermittedPeers="*.loggly.com")
+}
+```
+
+### Docker Syslog
+
+To send all docker logs to syslog:
+https://docs.docker.com/config/containers/logging/configure/
+
+docker-compose:
+
+```yml
+    logging:
+      driver: syslog
+      options:
+        tag: 'docker-SERVICENAME'
+```
