@@ -24,8 +24,12 @@
 
 * Delete all stopped containers: `docker rm $(docker ps -a -q)`
 * Delete all images: `docker rmi $(docker images -q)` 
-* Delete all unused data: `docker system prune`
-
+* Delete all unused data: 
+```
+docker system prune
+docker volumes prune
+docker images prune
+```
 ## Volumes
 
 * List all volumes: `docker volume ls`
