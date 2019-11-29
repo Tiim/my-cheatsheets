@@ -27,7 +27,7 @@
 * Delete all unused data: 
 ```
 docker system prune
-docker volumes prune
+docker volume prune
 docker images prune
 ```
 ## Volumes
