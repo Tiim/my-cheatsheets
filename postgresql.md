@@ -13,7 +13,7 @@
 * List table `\d+ <table_name>`
 * Exit `\q`
 
-## Syntag
+## Syntax
 
 ### Insert or Update (Upsert)
 
@@ -51,4 +51,14 @@ SET "column1" = value1,
     "column2" = value2 ,...
 WHERE
    condition;
+```
+
+## Kill hanging Query
+
+```sql
+SELECT * FROM pg_stat_activity WHERE state = 'active';
+
+SELECT pg_cancel_backend(PID);
+--OR
+SELECT pg_terminate_backend(PID);
 ```
