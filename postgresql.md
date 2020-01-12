@@ -56,7 +56,7 @@ WHERE
 ## Kill hanging Query
 
 ```sql
-SELECT * FROM pg_stat_activity WHERE state = 'active';
+SELECT pid, query FROM pg_stat_activity WHERE state = 'active';
 
 SELECT pg_cancel_backend(PID);
 --OR
