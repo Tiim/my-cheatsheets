@@ -25,8 +25,8 @@
 * Delete all stopped containers: `docker rm $(docker ps -a -q)`
 * Delete all images: `docker rmi $(docker images -q)` 
 * Delete all unused data: 
-```
-docker system prune
+```sh
+docker system prune -a
 docker volume prune
 docker images prune
 ```
