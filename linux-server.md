@@ -137,6 +137,7 @@ https://github.com/exoframejs/exoframe/blob/master/docs/ServerConfiguration.md
 
 ```sh
 export EXO_PRIVATE_KEY=<private key>
+export HOST_NAME=exo.tiimb.work
 
 docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
@@ -144,7 +145,7 @@ docker run -d \
   -v /home/tim/.ssh/authorized_keys:/root/.ssh/authorized_keys:ro \
   -e EXO_PRIVATE_KEY=$EXO_PRIVATE_KEY \
   --label traefik.enable=true \
-  --label "traefik.http.routers.exoframe-server.rule=Host(\`exo.coach.aqualetics.com\`)"  \
+  --label "traefik.http.routers.exoframe-server.rule=Host(\`$HOST_NAME\`)"  \
   --label traefik.http.routers.exoframe-server.tls.certresolver=exoframeChallenge \
   --restart always \
   --name exoframe-server \
