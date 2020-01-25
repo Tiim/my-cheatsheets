@@ -143,8 +143,9 @@ docker run -d \
   -v /var/exoframe:/root/.exoframe \
   -v /home/tim/.ssh/authorized_keys:/root/.ssh/authorized_keys:ro \
   -e EXO_PRIVATE_KEY=$EXO_PRIVATE_KEY \
-  --label traefik.backend=exoframe-server \
-  --label traefik.frontend.rule=Host:exo.tiimb.work \
+  --label traefik.enable=true \
+  --label "traefik.http.routers.exoframe-server.rule=Host(\`exo.coach.aqualetics.com\`)"  \
+  --label traefik.http.routers.exoframe-server.tls.certresolver=exoframeChallenge \
   --restart always \
   --name exoframe-server \
   exoframe/server
