@@ -6,15 +6,24 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
 \newcommand\todo[1][]{\textcolor{red}{TODO #1}}
 
-% for other code
-%\usepackage{listings}
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
 
 \setlength{\parindent}{0em}
 
 % set section in CM
 \setkomafont{section}{\normalfont\bfseries\Large}
+\lstset{
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
 
 \newcommand{\mytitle}[1]{{\noindent\Large\textbf{#1}}}
 \newcommand{\mysection}[1]{\textbf{\section*{Exercise \exnr.#1}}}
@@ -30,9 +39,9 @@
 \newcommand{\exauthortwo}{Author Two}
 \newcommand{\exnr}{X}
 %===================================
+\lhead{\exclass\\\exsemester\ifdefempty{\exauthortwo}{}{\\}}
+\rhead{University of Basel\\\exauthorone\ifdefempty{\exauthortwo}{}{\\\exauthortwo}}
 \begin{document}
-\noindent\textbf{\exclass} \hfill \textbf{University of Basel}\\
-\exsemester \hfill \exauthorone \\. \hfill \exauthortwo \\
 %===================================
 
 \todo[Fill in exercise information]
