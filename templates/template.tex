@@ -1,0 +1,47 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
+\usepackage[headheight=100pt,heightrounded]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+
+\setlength{\parindent}{0em}
+
+% set section in CM
+%\setkomafont{section}{\normalfont\bfseries\Large}
+\lstset{
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+\newcounter{EmptyAuthorInfo}
+\newcommand{\mytitle}[1]{{\vspace*{2.5mm}\noindent\Large\textbf{#1}}}
+\newcommand{\mysection}[1]{\textbf{\section*{Exercise \exnr.#1}}}
+\newcommand{\subsectionp}[1]{\subsection*{(#1)}}
+\newcommand{\subsectionl}[1]{\textbf{(#1)}}
+\newcommand{\todo}[1][]{\textcolor{red}{TODO #1}}
+
+\newcommand{\mystyling}[0]{
+  \lhead{
+    \textbf{\exclass}\\\exsemester
+    \ifdefempty{\exauthortwo}{}{~\\}
+  }
+  \rhead{
+    \textbf{University of Basel}\\
+    \exauthorone
+    \ifdefempty{\exmatrnrone}{}{ \exmatrnrone}
+    \ifdefempty{\exauthortwo}{}{\\\exauthortwo}
+    \ifdefempty{\exmatrnrtwo}{}{ \exmatrnrtwo}
+  }
+}
