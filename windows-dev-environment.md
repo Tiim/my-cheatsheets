@@ -150,6 +150,9 @@ PasswordAuthentication no
 sudo service ssh --full-restart
 ```
 
+Add sshd to task scheduler as described here:
+https://www.illuminiastudios.com/dev-diaries/ssh-on-windows-subsystem-for-linux/
+
 Personaly SSH
 
 ```
