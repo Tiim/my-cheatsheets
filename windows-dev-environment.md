@@ -153,6 +153,15 @@ sudo service ssh --full-restart
 Add sshd to task scheduler as described here:
 https://www.illuminiastudios.com/dev-diaries/ssh-on-windows-subsystem-for-linux/
 
+* Aufgabenplanung
+* Einfache Aufgabe erstellen (rechte sidebar)
+	* Name: `Start Bash SSH Server`
+	* Desc: `Start the SSH server inside WSL`
+* Trigger: Beim Start
+* Program starten
+	* Script: `%windir%\System32\bash.exe`
+	* Arguments: `-c "sudo /etc/init.d/ssh start"`
+
 Personaly SSH
 
 ```
