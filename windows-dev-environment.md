@@ -112,6 +112,28 @@ nvm install --lts
 npm i -g npm
 ```
 
+### Enable ssh in WSL
+
+```sh
+# Uninstall and reinstall ssh-server
+sudo apt purge openssh-server
+sudo apt install openssh-server
+
+# add authorized_keys
+cd ~
+cat .ssh/id_rsa.pub > .ssh/authorized_keys
+chmod 700 .ssh
+chmod 600 .ssh/authorized_keys
+# Edit /etc/ssh/sshd_config and set the settings below
+sudo vim /etc/ssh/sshd_config
+sudo service ssh --full-restart
+```
+
+```sshd_config
+Port 2222
+PasswordAuthentication no
+```
+
 ### Docker Cli
 
 [Documentation](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
