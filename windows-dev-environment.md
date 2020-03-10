@@ -40,6 +40,12 @@ Install Cascadia Code
 
 https://github.com/microsoft/cascadia-code/releases
 
+### Fira Code (has ligatures)
+
+Install FiraCode
+
+https://github.com/tonsky/FiraCode/releases
+
 ## Setup WSL
 
 ```sh
