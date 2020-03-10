@@ -134,6 +134,18 @@ Port 2222
 PasswordAuthentication no
 ```
 
+Personaly SSH
+
+```
+# vim ~/.ssh/config
+# chmod 700 ~/.ssh/config
+
+Host home
+	HostName burgnas.synology.me
+	Port 45693
+	User tim
+```
+
 ### Docker Cli
 
 [Documentation](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly)
