@@ -130,14 +130,24 @@ cd ~
 cat .ssh/id_rsa.pub > .ssh/authorized_keys
 chmod 700 .ssh
 chmod 600 .ssh/authorized_keys
+
+# Enable ssh deamon without sudo:
+sudo visudo
+
+#### After %sudo  ALL=(ALL:ALL) ALL
+# Allow ssh daemon to be started without password
+%sudo ALL=NOPASSWD: /usr/sbin/sshd
+####
+
 # Edit /etc/ssh/sshd_config and set the settings below
 sudo vim /etc/ssh/sshd_config
-sudo service ssh --full-restart
-```
 
-```sshd_config
+####
 Port 2222
 PasswordAuthentication no
+####
+
+sudo service ssh --full-restart
 ```
 
 Personaly SSH
