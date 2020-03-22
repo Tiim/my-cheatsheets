@@ -25,7 +25,26 @@ https://hyper.is/
 }
 ```
 
+## Fonts
 
+### Hack
+Download and install Hack font on windows
+
+https://github.com/source-foundry/Hack
+
+add `Hack` in front of the font array of ~/.hyper.js on windows
+
+### Cascadia Code
+
+Install Cascadia Code
+
+https://github.com/microsoft/cascadia-code/releases
+
+### Fira Code (has ligatures)
+
+Install FiraCode
+
+https://github.com/tonsky/FiraCode/releases
 
 ## Setup WSL
 
@@ -37,10 +56,11 @@ sudo apt upgrade
 ### Git
 
 ```sh
-sudo apt install git
+sudo apt install git vim
 
 git config --global user.name "Tiim"
 git config --global user.email "tim.bachmann96@gmail.com"
+git config --global core.editor "vim"
 
 # either create new rsa key
 ssh-keygen -t rsa -b 4096 -C "tim.bachmann96@gmail.com"
@@ -82,12 +102,6 @@ prompt_dir() {
 }
 ```
 
-Download and install Hack font on windows
-
-https://github.com/source-foundry/Hack
-
-add `Hack` in front of the font array of ~/.hyper.js on windows
-
 
 ### Nodejs
 
@@ -102,6 +116,67 @@ rm ~/.bash_profile ~/.profile ~/.bashrc
 nvm install --lts
 
 npm i -g npm
+
+npm config set init-author-name Tim Bachmann
+npm config set init-author-url https://tiim.ch/
+npm config set init-license MIT
+npm config set init-version 0.0.1
+```
+
+### Enable ssh in WSL
+
+```sh
+# Uninstall and reinstall ssh-server
+sudo apt purge openssh-server
+sudo apt install openssh-server
+
+# add authorized_keys
+cd ~
+cat .ssh/id_rsa.pub > .ssh/authorized_keys
+chmod 700 .ssh
+chmod 600 .ssh/authorized_keys
+
+# Enable ssh deamon without sudo:
+sudo visudo
+
+#### After %sudo  ALL=(ALL:ALL) ALL
+# Allow ssh daemon to be started without password
+%sudo ALL=NOPASSWD: /usr/sbin/sshd
+####
+
+# Edit /etc/ssh/sshd_config and set the settings below
+sudo vim /etc/ssh/sshd_config
+
+####
+Port 2222
+PasswordAuthentication no
+####
+
+sudo service ssh --full-restart
+```
+
+Add sshd to task scheduler as described here:
+https://www.illuminiastudios.com/dev-diaries/ssh-on-windows-subsystem-for-linux/
+
+* Aufgabenplanung
+* Einfache Aufgabe erstellen (rechte sidebar)
+	* Name: `Start Bash SSH Server`
+	* Desc: `Start the SSH server inside WSL`
+* Trigger: Beim Start
+* Program starten
+	* Script: `%windir%\System32\bash.exe`
+	* Arguments: `-c "sudo /etc/init.d/ssh start"`
+
+Personaly SSH
+
+```
+# vim ~/.ssh/config
+# chmod 700 ~/.ssh/config
+
+Host home
+	HostName burgnas.synology.me
+	Port 45693
+	User tim
 ```
 
 ### Docker Cli
@@ -168,6 +243,29 @@ options = "metadata"
 
 [See Here](https://github.com/docker/compose/releases)
 
+## Install Go
+
+[Download Here](https://golang.org/dl/)
+
+[Instructions Here](https://golang.org/doc/install)
+
+```sh
+cd /tmp/
+# see newest version here:
+# https://golang.org/dl/
+export GOVERSION="1.12.9"
+curl https://dl.google.com/go/go$GOVERSION.linux-amd64.tar.gz --output go$GOVERSION.linux-amd64.tar.gz
+
+# clean old go install
+sudo rm -rf /usr/local/go
+
+sudo tar -C /usr/local -xzf go$GOVERSION.linux-amd64.tar.gz
+
+# skip when updating go
+echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.zshrc
+rm go$GOVERSION.linux-amd64.tar.gz
+cd -
+```
 
 ## Install VS Code
 

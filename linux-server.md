@@ -51,9 +51,17 @@ ssh tim@remote_host
 ```sh
 sudo nano /etc/ssh/sshd_config
 
+## For all users
 # set to
 ...
 PasswordAuthentication no
+...
+
+## For all users except root
+# set to
+...
+Match User !root
+    PasswordAuthentication no
 ...
 
 # restart ssh server
@@ -128,15 +136,17 @@ https://github.com/exoframejs/exoframe/blob/master/docs/ServerConfiguration.md
 
 
 ```sh
-export PRIVATE_KEY=<private key>
+export EXO_PRIVATE_KEY=<private key>
+export HOST_NAME=exo.tiimb.work
 
 docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /var/exoframe:/root/.exoframe \
   -v /home/tim/.ssh/authorized_keys:/root/.ssh/authorized_keys:ro \
-  -e EXO_PRIVATE_KEY=$PRIVATE_KEY \
-  --label traefik.backend=exoframe-server \
-  --label traefik.frontend.rule=Host:exo.tiimb.work \
+  -e EXO_PRIVATE_KEY=$EXO_PRIVATE_KEY \
+  --label traefik.enable=true \
+  --label "traefik.http.routers.exoframe-server.rule=Host(\`$HOST_NAME\`)"  \
+  --label traefik.http.routers.exoframe-server.tls.certresolver=exoframeChallenge \
   --restart always \
   --name exoframe-server \
   exoframe/server
@@ -144,4 +154,36 @@ docker run -d \
   
 # edit server.config.yml
 vim /var/exoframe/server.config.yml
+```
+
+## Setup Docker logging
+
+### Loggly Syslog
+
+[Setup](https://www.loggly.com/docs/sending-logs-unixlinux-system-setup/)
+
+Filtering the logs
+
+```rsyslog
+# only send if the program name starts with docker-
+if re_match($programname,'docker-.*')
+then
+{
+# Send messages to Loggly over TCP using the template.
+action(type="omfwd" protocol="tcp" target="logs-01.loggly.com" port="6514" template="LogglyFormat" StreamDriver="gtls" StreamDriverMode="1" StreamDriverAuthMode="x509/name" StreamDriverPermittedPeers="*.loggly.com")
+}
+```
+
+### Docker Syslog
+
+To send all docker logs to syslog:
+https://docs.docker.com/config/containers/logging/configure/
+
+docker-compose:
+
+```yml
+    logging:
+      driver: syslog
+      options:
+        tag: 'docker-SERVICENAME'
 ```
