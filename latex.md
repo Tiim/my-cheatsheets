@@ -1,0 +1,32 @@
+# LaTex
+
+## Multi colum formulas
+
+```latex
+\usepackage{multicol}
+
+\begin{multicols}{2}
+  \begin{align*}
+    1 + 1 &= 2
+  \end{align*}
+  \columnbreak
+  \begin{align*}
+    2 + 1 &= 3
+  \end{align*}
+\end{multicols}
+```
+
+## Tables
+
+```latex
+\begin{center}
+  \begin{tabular}{|l|c|r|}
+    \hline
+    Title1 & Tile2 & Tile3 \\
+    \hline
+    1      & test  & 51989 \\
+    2      & test  & 62782 \\
+    \hline
+  \end{tabular}
+\end{center}
+```
