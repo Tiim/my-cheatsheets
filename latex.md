@@ -1,5 +1,20 @@
 # LaTex
 
+## Include Graphic
+
+```latex
+\begin{center}
+  \includegraphics[width = 0.85\textwidth]{graphic.png}
+\end{center}
+```
+
+## Include Code
+
+```latex
+{\tt file\_name.m }
+\lstinputlisting[language=MatLab]{file_name.m}
+```
+
 ## Multi colum formulas
 
 ```latex
