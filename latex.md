@@ -1,5 +1,20 @@
 # LaTex
 
+## Symbols
+
+```latex
+\lor %Logical OR ∨
+\land %Logical AND ∧
+\lnot %Logical NOT ¬
+```
+
+## Fonts
+
+```latex
+% Caligraphic font in math
+\mathcal{text}
+```
+
 ## Include Graphic
 
 ```latex
