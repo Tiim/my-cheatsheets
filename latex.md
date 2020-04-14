@@ -6,6 +6,9 @@
 \lor %Logical OR ∨
 \land %Logical AND ∧
 \lnot %Logical NOT ¬
+
+%Brackets
+\langle \rangle % Angled Brackets 〈〉
 ```
 
 ## Fonts
