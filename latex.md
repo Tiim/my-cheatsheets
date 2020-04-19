@@ -10,6 +10,10 @@
 %Brackets
 \langle \rangle % Angled Brackets 〈〉
 
+\ddots % Diagonal dots
+\vdots % Vertical dots
+\hdots % Horizontal dots
+
 \overset{!}{=} % Gives a equal with a exclamation point above
 ```
 
@@ -64,4 +68,15 @@
     \hline
   \end{tabular}
 \end{center}
+```
+
+## Matrix / Vector
+
+```latex
+\begin{align*}
+  \begin{bmatrix}
+  0 & 1 \\
+  2 & 3 \\
+  \end{bmatrix}
+\end{align*}
 ```
