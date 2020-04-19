@@ -80,3 +80,12 @@
   \end{bmatrix}
 \end{align*}
 ```
+
+## QED, black square after proof
+```latex
+\newcommand{\QED}{\tag*{$\blacksquare$}}
+\begin{align*}
+  x + 0 &= x
+  \QED
+\end{align*}
+```
