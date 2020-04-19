@@ -9,6 +9,8 @@
 
 %Brackets
 \langle \rangle % Angled Brackets 〈〉
+
+\overset{!}{=} % Gives a equal with a exclamation point above
 ```
 
 ## Fonts
