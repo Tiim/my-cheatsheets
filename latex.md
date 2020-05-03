@@ -39,6 +39,14 @@
 \lstinputlisting[language=MatLab]{file_name.m}
 ```
 
+### Inline code 
+```latex
+\begin{lstlisting}[escapeinside={(*}{*)},language=MatLab]
+  if foo
+  list= { (*$S_1,S_2,S_3$*) }
+\end{lstlisting}
+```
+
 ## Multi colum formulas
 
 ```latex
