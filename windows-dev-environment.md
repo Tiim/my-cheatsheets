@@ -3,27 +3,7 @@
 
 [Guide](http://wsl-guide.org/en/latest/installation.html)
 
-## Install Hyper
 
-https://hyper.is/
-
-
-
-```js
-{
-  // set hack font
-  fontFamily: 'Hack, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-  
-  //Set git bash
-  shell: 'C:\\Program Files\\Git\\git-cmd.exe',
-  shellArgs: ['--command=usr/bin/bash.exe', '-l', '-i'],
-  
-  // set theme
-  plugins: [
-	  'hyper-material-theme'
-  ],
-}
-```
 
 ## Fonts
 
