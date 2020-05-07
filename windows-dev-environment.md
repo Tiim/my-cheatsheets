@@ -48,8 +48,14 @@ ssh-keygen -t rsa -b 4096 -C "tim.bachmann96@gmail.com"
 cat ~/.ssh/id_rsa.pub
 
 # or use the key in keepass
-public key: ~/.ssh/id_rsa.pub
-private key ~/.ssh/id_rsa
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+# public key: ~/.ssh/id_rsa.pub
+vim ~/.ssh/id_rsa.pub
+# private key ~/.ssh/id_rsa
+vim ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 600 ~/.ssh/id_rsa
 ```
 ### Zsh
 
