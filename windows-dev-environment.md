@@ -1,7 +1,7 @@
 # Install Dev Env
 ## Install WSL
 
-[Guide](http://wsl-guide.org/en/latest/installation.html)
+[Guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 
 
