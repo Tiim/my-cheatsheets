@@ -260,3 +260,10 @@ Install Settings Sync Plugin
 Github Token: `<create new>`
 
 Gist-ID: `634f528526bd91a4d3d661561b6d0f83`
+
+## Installed programs
+
+```sh
+sudo apt install \
+	texlive-full \
+```
