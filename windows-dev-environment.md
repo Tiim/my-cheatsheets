@@ -201,7 +201,8 @@ sudo add-apt-repository \
 sudo apt-get update -y
 
 # Install the latest version of Docker CE.
-sudo apt-get install -y docker-ce
+sudo apt-get install -y docker-ce # or docker.io if docker-ce doesn't work
+# https://stackoverflow.com/questions/61401626/docker-installation-failed-on-ubuntu-20-04-ltsvmware
 
 # Allow your user to access the Docker CLI without needing root access.
 sudo usermod -aG docker $USER
