@@ -152,6 +152,9 @@ npm config set init-version 0.0.1
 
 ### Enable ssh in WSL
 
+**TODO:** update this section to work in WSL 2
+[WSL Issue](https://github.com/microsoft/WSL/issues/4150)
+
 ```sh
 # Uninstall and reinstall ssh-server
 sudo apt purge openssh-server
