@@ -101,7 +101,7 @@ source ~/.zshrc
 
 ### Nodejs
 
-check linke [here](https://github.com/nvm-sh/nvm#installation-and-update)
+check links [here](https://github.com/nvm-sh/nvm#installation-and-update)
 
 ```sh
 # nvm
