@@ -142,7 +142,7 @@ rm ~/.bash_profile ~/.profile ~/.bashrc
 
 nvm install --lts
 
-npm i -g npm
+npm i -g npm@latest
 
 npm config set init-author-name Tim Bachmann
 npm config set init-author-url https://tiim.ch/
