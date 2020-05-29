@@ -102,18 +102,31 @@ Set oh my zsh [plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
 
 ```
 plugins=(
-  cargo
-  docker
-  docker-compose
-  docker-machine
-  git
-  github
-  gitignore
-  golang
-  npm
-  npx
-  nvm
+cargo
+command-not-found
+compleat
+docker
+docker-compose
+docker-machine
+git
+git-extras
+github
+gitignore
+golang
+history
+node
+npm
+npx
+nvm
+rust
+rustup
+safe-paste
+vscode
 )
+
+
+# reload zshrc
+source ~/.zshrc
 ```
 
 
