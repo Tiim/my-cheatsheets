@@ -98,6 +98,24 @@ prompt_dir() {
 source ~/.zshrc
 ```
 
+Set oh my zsh [plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
+
+```
+plugins=(
+  cargo
+  docker
+  docker-compose
+  docker-machine
+  git
+  github
+  gitignore
+  golang
+  npm
+  npx
+  nvm
+)
+```
+
 
 ### Nodejs
 
