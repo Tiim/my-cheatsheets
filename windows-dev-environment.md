@@ -54,6 +54,10 @@ chmod 700 ~/.ssh
 vim ~/.ssh/id_rsa.pub
 # private key ~/.ssh/id_rsa
 vim ~/.ssh/id_rsa
+# Check if files are valid
+ssh-keygen -l -f ~/.ssh/id_rsa.pub
+ssh-keygen -l -f ~/.ssh/id_rsa
+
 chmod 644 ~/.ssh/id_rsa.pub
 chmod 600 ~/.ssh/id_rsa
 ```
