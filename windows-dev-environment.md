@@ -74,6 +74,9 @@ change theme to agnoster
 vim ~/.zshrc
 
 set THEME="agnoster"
+
+# Reload zshrc
+source ~/.zshrc
 ```
 
 append ath the end of .zshrc
@@ -90,6 +93,9 @@ prompt_context() {
 prompt_dir() {
   prompt_segment blue black "${PWD##*/}"
 }
+
+# reload zshrc
+source ~/.zshrc
 ```
 
 
