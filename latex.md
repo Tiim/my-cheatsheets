@@ -22,6 +22,11 @@
 ```latex
 % Caligraphic font in math
 \mathcal{text}
+
+\usepackage{amsfonts} 
+% or 
+\usepackage{amssymb}
+\mathbb{R}
 ```
 
 ## Include Graphic
