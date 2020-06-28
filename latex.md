@@ -2,6 +2,8 @@
 
 ## Symbols
 
+[Find Symbols with Dexterify](http://detexify.kirelabs.org/classify.html)
+
 ```latex
 \lor %Logical OR ∨
 \land %Logical AND ∧
