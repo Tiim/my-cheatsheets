@@ -18,6 +18,8 @@
 
 \usepackage{ marvosym }
 \Lightning % lightning bolt, contradiction
+\usepackage{amssymb}
+\checkmark % checkmark
 
 \overset{!}{=} % Gives a equal with a exclamation point above
 ```
