@@ -16,7 +16,16 @@
 \vdots % Vertical dots
 \hdots % Horizontal dots
 
+\usepackage{ marvosym }
+\Lightning % lightning bolt, contradiction
+
 \overset{!}{=} % Gives a equal with a exclamation point above
+```
+
+## Braces
+
+```latex
+\underbrace{2*p}_{\text{even number}}
 ```
 
 ## Fonts
