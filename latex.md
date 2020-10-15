@@ -22,6 +22,9 @@
 \checkmark % checkmark
 
 \overset{!}{=} % Gives a equal with a exclamation point above
+
+\usepackage{mathtools}
+\coloneqq % := (define symbol) 
 ```
 
 ## Braces
