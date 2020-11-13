@@ -248,13 +248,14 @@ Gist-ID: `634f528526bd91a4d3d661561b6d0f83`
 * `cd install-tl-*`
 * remove old texlive: `rm -rf ~/.texlive`
 * `TEXLIVE_INSTALL_PREFIX=~/.texlive ./install-tl`
+* Add to ~/.zshrc: `export PATH=/home/tim/texlive/2020/bin/x86_64-linux:/home/tim/.local/bin:$PATH`
 
 ## Installed programs
 
 ```sh
 sudo apt install \
-	texlive \
-	texlive-lang-german \
-	texlive-latex-extra \
-	texlive-extra-utils
+#	texlive \
+#	texlive-lang-german \
+#	texlive-latex-extra \
+#	texlive-extra-utils
 ```
