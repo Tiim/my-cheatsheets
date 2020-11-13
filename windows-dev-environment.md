@@ -241,6 +241,14 @@ Github Token: `<create new>`
 
 Gist-ID: `634f528526bd91a4d3d661561b6d0f83`
 
+## Install TexLive
+
+* Download tar: https://www.tug.org/texlive/acquire-netinstall.html (`wget <url>`)
+* Extract tar: `tar xf install-tl-unx.tar.gz`
+* `cd install-tl-*`
+* remove old texlive: `rm -rf ~/.texlive`
+* `TEXLIVE_INSTALL_PREFIX=~/.texlive ./install-tl`
+
 ## Installed programs
 
 ```sh
