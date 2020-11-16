@@ -134,7 +134,7 @@ prompt_dir() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-export PATH=/home/tim/texlive/2020/bin/x86_64-linux:/home/tim/.local/bin:$PATH
+export PATH=/home/tim/.texlive/2020/bin/x86_64-linux:/home/tim/.local/bin:$PATH
 export TEXLIVE_INSTALL_PREFIX=/home/tim/.texlive
 
 export MANPATH=$MANPATH:/home/tim/.texlive/2020/texmf-dist/doc/man
