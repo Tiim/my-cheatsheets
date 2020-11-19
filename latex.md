@@ -9,6 +9,10 @@
 \land %Logical AND ∧
 \lnot %Logical NOT ¬
 
+% Set
+\mathbb{R}
+\setminus & without 
+
 %Brackets
 \langle \rangle % Angled Brackets 〈〉
 
