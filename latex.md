@@ -37,6 +37,19 @@
 \underbrace{2*p}_{\text{even number}}
 ```
 
+## Function
+
+```latex
+f : \mathbb{N} \to \mathbb{R}
+
+
+\usepackage{amsmath} % cases
+f(x) = \begin{cases} 
+  0 & x\leq 0 \\
+  \pi & 100\leq x 
+\end{cases}
+```
+
 ## Fonts
 
 ```latex
