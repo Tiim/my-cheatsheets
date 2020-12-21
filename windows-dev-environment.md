@@ -94,6 +94,8 @@ prompt_dir() {
   prompt_segment blue black "${PWD##*/}"
 }
 
+export BROWSER=wslview
+
 # reload zshrc
 source ~/.zshrc
 ```
