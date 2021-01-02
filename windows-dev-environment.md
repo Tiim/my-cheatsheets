@@ -256,6 +256,7 @@ Gist-ID: `634f528526bd91a4d3d661561b6d0f83`
 
 ```sh
 sudo apt install \
+	jq \
 #	texlive \
 #	texlive-lang-german \
 #	texlive-latex-extra \
