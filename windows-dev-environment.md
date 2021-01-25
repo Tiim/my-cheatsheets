@@ -4,7 +4,6 @@
 [Guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 
-
 ## Fonts
 
 ### Hack
@@ -131,6 +130,22 @@ vscode
 source ~/.zshrc
 ```
 
+## Dotfiles
+[Tutorial](https://www.atlassian.com/git/tutorials/dotfiles)
+[Repo](https://github.com/Tiim/.dotfiles)
+
+```
+# Restore:
+## Clone Dotfiles Repo
+git clone --bare git@github.com:Tiim/.dotfiles.git $HOME/.dotfiles
+## Add temporary alias
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+config config --local status.showUntrackedFiles no
+## checkout dotfiles from repo
+config checkout
+## Reload .zshrc
+source ~/.zshrc
+```
 
 ### Nodejs
 
