@@ -12,3 +12,7 @@
 ## Syslog
 
 `sudo tail -f /var/log/syslog` follow syslog
+
+## Disk usage
+
+`df -h`
