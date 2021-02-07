@@ -62,3 +62,26 @@ SELECT pg_cancel_backend(PID);
 --OR
 SELECT pg_terminate_backend(PID);
 ```
+
+## Fully Optional Migration
+
+```sql
+-- helper function that performs migration
+CREATE OR REPLACE FUNCTION __tmp_migration() RETURNS BOOLEAN AS
+$BODY$ 
+BEGIN
+
+IF NOT EXISTS(SELECT * FROM information_schema.tables WHERE table_schema = 'public' AND table_name = '<my table to check>')
+THEN
+      <migration>
+RETURN 'true';
+END IF;
+RETURN 'false';
+END;
+$BODY$
+LANGUAGE plpgsql;
+
+-- execute function and cleanup
+SELECT __tmp_migration();
+DROP FUNCTION __tmp_migration;
+```
