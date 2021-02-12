@@ -74,4 +74,6 @@ define('FORCE_SSL_CONTENT', false);
 
 define('WP_HOME','http://localhost:8080');
 define('WP_SITEURL','http://localhost:8080');
+
+define('WP_DEBUG', true);
 ```
