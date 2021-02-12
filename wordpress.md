@@ -14,7 +14,7 @@
 - docker-compose.yml
 ```
 
-### Docker Compose
+### Files
 
 ```yml
 # docker-compose.yml
@@ -66,4 +66,13 @@ services:
 # php/Dockerfile
 FROM php:7.1-apache
 RUN docker-php-ext-install mysqli pdo pdo_mysql
+```
+
+```php
+define('FORCE_SSL_ADMIN',   false);
+define('FORCE_SSL_LOGIN',   false);
+define('FORCE_SSL_CONTENT', false);
+
+define('WP_HOME','http://localhost:8080');
+define('WP_SITEURL','http://localhost:8080');
 ```
