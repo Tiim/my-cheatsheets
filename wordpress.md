@@ -68,6 +68,10 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 ```
 
 ```php
+// wp/wp_config.php
+
+// apply these changes
+
 // if set
 define('FORCE_SSL_ADMIN',   false);
 define('FORCE_SSL_LOGIN',   false);
