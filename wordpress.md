@@ -68,9 +68,13 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 ```
 
 ```php
+// if set
 define('FORCE_SSL_ADMIN',   false);
 define('FORCE_SSL_LOGIN',   false);
 define('FORCE_SSL_CONTENT', false);
+
+define('DB_USER', 'MYUSER');
+define('DB_PASSWORD', 'MYPASSWORD');
 
 define('WP_HOME','http://localhost:8080');
 define('WP_SITEURL','http://localhost:8080');
