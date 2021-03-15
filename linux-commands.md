@@ -1,5 +1,14 @@
 # Linux Commands
 
+## Batch Rename
+
+```bash
+# Rename all *.txt to *.text
+for f in *.txt; do 
+    mv -- "$f" "${f%.txt}.text"
+done
+```
+
 ## tmux
 
 * `tmux a` Attach to tmux session
