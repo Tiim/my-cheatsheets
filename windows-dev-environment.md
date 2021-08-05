@@ -1,7 +1,8 @@
 # Install Dev Env
 ## Install WSL
 
-[Guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+* [Guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+* [Install Distro To Different Location](https://vpraharsha3.medium.com/installing-wsl-distro-to-a-different-custom-location-30d101f04113)
 
 
 ## Fonts
