@@ -7,19 +7,6 @@
 
 ## Fonts
 
-### Hack
-Download and install Hack font on windows
-
-https://github.com/source-foundry/Hack
-
-add `Hack` in front of the font array of ~/.hyper.js on windows
-
-### Cascadia Code
-
-Install Cascadia Code
-
-https://github.com/microsoft/cascadia-code/releases
-
 ### Fira Code (has ligatures)
 
 Install FiraCode
