@@ -48,74 +48,18 @@ ssh-keygen -l -f ~/.ssh/id_rsa
 chmod 644 ~/.ssh/id_rsa.pub
 chmod 600 ~/.ssh/id_rsa
 ```
-### Zsh
+## Bash
+
+Install https://starship.rs/
+
+append ath the end of .bashrc
 
 ```sh
-sudo apt install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-change theme to agnoster
-
-```sh
-vim ~/.zshrc
-
-set THEME="agnoster"
-
-# Reload zshrc
-source ~/.zshrc
-```
-
-append ath the end of .zshrc
-
-```sh
-# make readable ls colors
-LS_COLORS="ow=01;36;40" && export LS_COLORS 
-
-# change promt context and prompt dir 
-prompt_context() {
-  prompt_segment black default  "★  "
-}
-
-prompt_dir() {
-  prompt_segment blue black "${PWD##*/}"
-}
 
 export BROWSER=wslview
 
 # reload zshrc
-source ~/.zshrc
-```
-
-Set oh my zsh [plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins)
-
-```
-plugins=(
-cargo
-command-not-found
-compleat
-docker
-docker-compose
-docker-machine
-git
-git-extras
-github
-gitignore
-golang
-history
-node
-npm
-npx
-nvm
-rust
-rustup
-safe-paste
-vscode
-)
-
-
-# reload zshrc
-source ~/.zshrc
+source ~/.bashrc
 ```
 
 ## Dotfiles
