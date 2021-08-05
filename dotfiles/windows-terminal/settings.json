@@ -42,6 +42,7 @@
                 "colorScheme": "One Half Dark",
                 "cursorShape": "emptyBox",
                 "useAcrylic": true
+                "startingDirectory": "//wsl$/Ubuntu/home/tim",
             },
             {
                 // Make changes here to the powershell.exe profile.
