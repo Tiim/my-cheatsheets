@@ -5195,9 +5195,9 @@
                   "scancode": 23
                 },
                 {
-                  "keyActionType": "switchLayer",
-                  "layer": "mouse",
-                  "switchLayerMode": "hold"
+                  "keyActionType": "keystroke",
+                  "type": "basic",
+                  "scancode": 57
                 },
                 {
                   "keyActionType": "keystroke",
@@ -5597,10 +5597,7 @@
             {
               "id": 0,
               "keyActions": [
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "PTT"
-                },
+                null,
                 null,
                 null,
                 null,
@@ -5692,24 +5689,12 @@
                 null,
                 {
                   "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "DVO"
+                  "keymapAbbreviation": "PTT"
                 },
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "COL"
-                },
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "QWM"
-                },
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "DVM"
-                },
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "COM"
-                },
+                null,
+                null,
+                null,
+                null,
                 null,
                 null,
                 null,
@@ -5871,11 +5856,7 @@
                 null,
                 null,
                 null,
-                {
-                  "keyActionType": "switchLayer",
-                  "layer": "mouse",
-                  "switchLayerMode": "hold"
-                },
+                null,
                 null,
                 {
                   "keyActionType": "mouse",
@@ -6273,14 +6254,14 @@
                   "switchLayerMode": "holdAndDoubleTapToggle"
                 },
                 {
+                  "keyActionType": "switchLayer",
+                  "layer": "mod",
+                  "switchLayerMode": "hold"
+                },
+                {
                   "keyActionType": "keystroke",
                   "type": "basic",
                   "scancode": 44
-                },
-                {
-                  "keyActionType": "switchLayer",
-                  "layer": "mod",
-                  "switchLayerMode": "holdAndDoubleTapToggle"
                 },
                 null
               ]
@@ -6573,12 +6554,12 @@
                   "modifierMask": 4
                 },
                 null,
-                null,
                 {
                   "keyActionType": "switchLayer",
                   "layer": "mod",
-                  "switchLayerMode": "holdAndDoubleTapToggle"
+                  "switchLayerMode": "hold"
                 },
+                null,
                 null
               ]
             }
@@ -6682,26 +6663,11 @@
                   "keyActionType": "switchKeymap",
                   "keymapAbbreviation": "QWR"
                 },
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "DVO"
-                },
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "COL"
-                },
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "QWM"
-                },
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "DVM"
-                },
-                {
-                  "keyActionType": "switchKeymap",
-                  "keymapAbbreviation": "COM"
-                },
+                null,
+                null,
+                null,
+                null,
+                null,
                 null,
                 null,
                 null,
