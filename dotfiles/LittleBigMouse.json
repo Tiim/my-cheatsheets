@@ -1,0 +1,456 @@
+{
+  "Config": {
+    "Id": "ACI2493_C6LMQS019589_0.GSM7706__0",
+    "AllScreens": [
+      {
+        "Id": "ACI2493_C6LMQS019589_0",
+        "IdResolution": "1920x1080",
+        "Primary": false,
+        "Orientation": 0,
+        "PhysicalRotated": {
+          "Borders": "20,20,20,20",
+          "Bounds": "0,0,521,293",
+          "OutsideBounds": "-20,-20,561,333"
+        },
+        "InMm": {
+          "Borders": "20,20,20,20",
+          "Bounds": "724.723529411765,99.26,521,293",
+          "OutsideBounds": "704.723529411765,79.26,561,333"
+        },
+        "InMmUnrotated": {
+          "Borders": "20,20,20,20",
+          "Bounds": "724.723529411765,99.26,521,293",
+          "OutsideBounds": "704.723529411765,79.26,561,333"
+        },
+        "InPixel": {
+          "Borders": "0,0,0,0",
+          "Bounds": "3840,819,1920,1080",
+          "OutsideBounds": "3840,819,1920,1080"
+        },
+        "InDip": {
+          "Borders": "0,0,0,0",
+          "Bounds": "2560,546,1920,1080",
+          "OutsideBounds": "2560,546,1920,1080"
+        },
+        "RealPitch": {
+          "X": 0.27135416666666667,
+          "Y": 0.27129629629629631
+        },
+        "PhysicalRatio": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "Pitch": {
+          "X": 0.27135416666666667,
+          "Y": 0.27129629629629631
+        },
+        "OverallBoundsWithoutThisInMm": "0,0,600,392.26",
+        "GuiLocation": "0,0,0,0",
+        "WinDpiX": 96.0,
+        "WinDpiY": 96.0,
+        "RawDpi": {
+          "X": 93.0,
+          "Y": 93.0
+        },
+        "EffectiveDpi": {
+          "X": 96.0,
+          "Y": 96.0
+        },
+        "DpiAwareAngularDpi": {
+          "X": 92.0,
+          "Y": 92.0
+        },
+        "WpfToPixelRatio": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "PixelToDipRatio": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "PhysicalToPixelRatio": {
+          "X": 3.6852207293666024,
+          "Y": 3.6860068259385663
+        },
+        "MmToDipRatio": {
+          "X": 3.6852207293666024,
+          "Y": 3.6860068259385663
+        },
+        "RealDpi": {
+          "X": 93.604606525911692,
+          "Y": 93.624573378839585
+        },
+        "DpiX": {
+          "X": 93.604606525911692,
+          "Y": 93.624573378839585
+        },
+        "RealDpiAvg": 93.614590484711471
+      },
+      {
+        "Id": "GSM7706__0",
+        "IdResolution": "3840x2160",
+        "Primary": true,
+        "Orientation": 0,
+        "PhysicalRotated": {
+          "Borders": "12.5,13.6,12.5,13.6",
+          "Bounds": "0,0,600,392.26",
+          "OutsideBounds": "-12.5,-13.6,625,419.46"
+        },
+        "InMm": {
+          "Borders": "12.5,13.6,12.5,13.6",
+          "Bounds": "0,0,600,392.26",
+          "OutsideBounds": "-12.5,-13.6,625,419.46"
+        },
+        "InMmUnrotated": {
+          "Borders": "12.5,13.6,12.5,13.6",
+          "Bounds": "0,0,600,392.26",
+          "OutsideBounds": "-12.5,-13.6,625,419.46"
+        },
+        "InPixel": {
+          "Borders": "0,0,0,0",
+          "Bounds": "0,0,3840,2160",
+          "OutsideBounds": "0,0,3840,2160"
+        },
+        "InDip": {
+          "Borders": "0,0,0,0",
+          "Bounds": "0,0,2560,1440",
+          "OutsideBounds": "0,0,2560,1440"
+        },
+        "RealPitch": {
+          "X": 0.15625,
+          "Y": 0.18160185185185185
+        },
+        "PhysicalRatio": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "Pitch": {
+          "X": 0.15625,
+          "Y": 0.18160185185185185
+        },
+        "OverallBoundsWithoutThisInMm": "724.723529411765,99.26,521,293",
+        "GuiLocation": "0,0,0,0",
+        "WinDpiX": 144.0,
+        "WinDpiY": 144.0,
+        "RawDpi": {
+          "X": 162.0,
+          "Y": 161.0
+        },
+        "EffectiveDpi": {
+          "X": 144.0,
+          "Y": 144.0
+        },
+        "DpiAwareAngularDpi": {
+          "X": 161.0,
+          "Y": 160.0
+        },
+        "WpfToPixelRatio": {
+          "X": 1.5,
+          "Y": 1.5
+        },
+        "PixelToDipRatio": {
+          "X": 0.66666666666666663,
+          "Y": 0.66666666666666663
+        },
+        "PhysicalToPixelRatio": {
+          "X": 6.4,
+          "Y": 5.50655177688268
+        },
+        "MmToDipRatio": {
+          "X": 4.2666666666666666,
+          "Y": 3.6710345179217865
+        },
+        "RealDpi": {
+          "X": 162.56,
+          "Y": 139.86641513282007
+        },
+        "DpiX": {
+          "X": 162.56,
+          "Y": 139.86641513282007
+        },
+        "RealDpiAvg": 151.63833236043311
+      }
+    ],
+    "AutoUpdate": true,
+    "PrimaryScreen": {
+      "Id": "GSM7706__0",
+      "IdResolution": "3840x2160",
+      "Primary": true,
+      "Orientation": 0,
+      "PhysicalRotated": {
+        "Borders": "12.5,13.6,12.5,13.6",
+        "Bounds": "0,0,600,392.26",
+        "OutsideBounds": "-12.5,-13.6,625,419.46"
+      },
+      "InMm": {
+        "Borders": "12.5,13.6,12.5,13.6",
+        "Bounds": "0,0,600,392.26",
+        "OutsideBounds": "-12.5,-13.6,625,419.46"
+      },
+      "InMmUnrotated": {
+        "Borders": "12.5,13.6,12.5,13.6",
+        "Bounds": "0,0,600,392.26",
+        "OutsideBounds": "-12.5,-13.6,625,419.46"
+      },
+      "InPixel": {
+        "Borders": "0,0,0,0",
+        "Bounds": "0,0,3840,2160",
+        "OutsideBounds": "0,0,3840,2160"
+      },
+      "InDip": {
+        "Borders": "0,0,0,0",
+        "Bounds": "0,0,2560,1440",
+        "OutsideBounds": "0,0,2560,1440"
+      },
+      "RealPitch": {
+        "X": 0.15625,
+        "Y": 0.18160185185185185
+      },
+      "PhysicalRatio": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "Pitch": {
+        "X": 0.15625,
+        "Y": 0.18160185185185185
+      },
+      "OverallBoundsWithoutThisInMm": "724.723529411765,99.26,521,293",
+      "GuiLocation": "0,0,0,0",
+      "WinDpiX": 144.0,
+      "WinDpiY": 144.0,
+      "RawDpi": {
+        "X": 162.0,
+        "Y": 161.0
+      },
+      "EffectiveDpi": {
+        "X": 144.0,
+        "Y": 144.0
+      },
+      "DpiAwareAngularDpi": {
+        "X": 161.0,
+        "Y": 160.0
+      },
+      "WpfToPixelRatio": {
+        "X": 1.5,
+        "Y": 1.5
+      },
+      "PixelToDipRatio": {
+        "X": 0.66666666666666663,
+        "Y": 0.66666666666666663
+      },
+      "PhysicalToPixelRatio": {
+        "X": 6.4,
+        "Y": 5.50655177688268
+      },
+      "MmToDipRatio": {
+        "X": 4.2666666666666666,
+        "Y": 3.6710345179217865
+      },
+      "RealDpi": {
+        "X": 162.56,
+        "Y": 139.86641513282007
+      },
+      "DpiX": {
+        "X": 162.56,
+        "Y": 139.86641513282007
+      },
+      "RealDpiAvg": 151.63833236043311
+    },
+    "PhysicalOutsideBounds": "-12.5,-13.6,1278.22352941176,425.86",
+    "PhysicalBounds": "0,0,1245.72352941176,392.26",
+    "Enabled": true,
+    "LoadAtStartup": true,
+    "LoopAllowed": true,
+    "LoopX": false,
+    "LoopY": false,
+    "IsRatio100": false,
+    "AdjustPointerAllowed": false,
+    "AdjustPointer": false,
+    "AdjustSpeedAllowed": false,
+    "AdjustSpeed": false,
+    "AllowCornerCrossing": false,
+    "HomeCinema": false,
+    "Pinned": false,
+    "ConfigLocation": "0,0,0,0",
+    "AllowOverlaps": false,
+    "AllowDiscontinuity": false,
+    "MaxEffectiveDpiX": 144.0,
+    "MaxEffectiveDpiY": 144.0
+  },
+  "Monitors": [
+    {
+      "DeviceId": "MONITOR\\ACI2493\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0001",
+      "PnpCode": "ACI2493",
+      "IdMonitor": "ACI2493_C6LMQS019589",
+      "DeviceKey": "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0001",
+      "DeviceString": "Generic PnP Monitor",
+      "Devices": [
+        {
+          "AttachedToDesktop": true,
+          "DisplayModes": [],
+          "DeviceCaps": {
+            "Size": "0,0",
+            "Resolution": "0,0",
+            "LogPixels": "0,0",
+            "Aspect": "0,0",
+            "BitsPixel": 0
+          },
+          "CurrentMode": null,
+          "DeviceName": "\\\\.\\DISPLAY1\\Monitor0",
+          "DeviceString": "Generic PnP Monitor",
+          "State": 3,
+          "DeviceId": "MONITOR\\ACI2493\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0001",
+          "DeviceKey": "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0001"
+        }
+      ],
+      "AttachedDevice": {
+        "AttachedToDesktop": true,
+        "DisplayModes": [],
+        "DeviceCaps": {
+          "Size": "0,0",
+          "Resolution": "0,0",
+          "LogPixels": "0,0",
+          "Aspect": "0,0",
+          "BitsPixel": 0
+        },
+        "CurrentMode": null,
+        "DeviceName": "\\\\.\\DISPLAY1\\Monitor0",
+        "DeviceString": "Generic PnP Monitor",
+        "State": 3,
+        "DeviceId": "MONITOR\\ACI2493\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0001",
+        "DeviceKey": "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0001"
+      },
+      "AttachedDisplay": {
+        "AttachedToDesktop": true,
+        "DisplayModes": [],
+        "DeviceCaps": {
+          "Size": "521,293",
+          "Resolution": "1920,1080",
+          "LogPixels": "144,144",
+          "Aspect": "36,36",
+          "BitsPixel": 32
+        },
+        "CurrentMode": {
+          "Position": "3840,819",
+          "BitsPerPixel": 32,
+          "Pels": "1920,1080",
+          "DisplayFlags": 0,
+          "DisplayFrequency": 60,
+          "DisplayFixedOutput": 0,
+          "DisplayOrientation": 0
+        },
+        "DeviceName": "\\\\.\\DISPLAY1",
+        "DeviceString": "NVIDIA GeForce GTX 650",
+        "State": 1,
+        "DeviceId": "PCI\\VEN_10DE&DEV_0FC6&SUBSYS_26503842&REV_A1",
+        "DeviceKey": "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Video\\{1D364553-A198-11EA-875B-902B34ABADFF}\\0000"
+      },
+      "MonitorArea": "3840,819,1920,1080",
+      "WorkArea": "3840,819,1920,1040",
+      "HKeyName": "\\REGISTRY\\MACHINE\\SYSTEM\\ControlSet001\\Enum\\DISPLAY\\ACI2493\\5&91f4c7a&0&UID4864\\Device Parameters",
+      "AttachedToDesktop": true,
+      "Primary": false,
+      "Edid": {
+        "ProductCode": "2493",
+        "Serial": "01010101",
+        "PhysicalSize": "521,293",
+        "ManufacturerCode": "ACI",
+        "Model": "VE247",
+        "SerialNo": "C6LMQS019589"
+      },
+      "EffectiveDpi": "96,96",
+      "AngularDpi": "92,92",
+      "RawDpi": "93,93",
+      "ScaleFactor": 1.0,
+      "CapabilitiesString": null,
+      "MonitorNo": 1
+    },
+    {
+      "DeviceId": "MONITOR\\GSM7706\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0000",
+      "PnpCode": "GSM7706",
+      "IdMonitor": "GSM7706_",
+      "DeviceKey": "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0000",
+      "DeviceString": "Generic PnP Monitor",
+      "Devices": [
+        {
+          "AttachedToDesktop": true,
+          "DisplayModes": [],
+          "DeviceCaps": {
+            "Size": "0,0",
+            "Resolution": "0,0",
+            "LogPixels": "0,0",
+            "Aspect": "0,0",
+            "BitsPixel": 0
+          },
+          "CurrentMode": null,
+          "DeviceName": "\\\\.\\DISPLAY2\\Monitor0",
+          "DeviceString": "Generic PnP Monitor",
+          "State": 3,
+          "DeviceId": "MONITOR\\GSM7706\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0000",
+          "DeviceKey": "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0000"
+        }
+      ],
+      "AttachedDevice": {
+        "AttachedToDesktop": true,
+        "DisplayModes": [],
+        "DeviceCaps": {
+          "Size": "0,0",
+          "Resolution": "0,0",
+          "LogPixels": "0,0",
+          "Aspect": "0,0",
+          "BitsPixel": 0
+        },
+        "CurrentMode": null,
+        "DeviceName": "\\\\.\\DISPLAY2\\Monitor0",
+        "DeviceString": "Generic PnP Monitor",
+        "State": 3,
+        "DeviceId": "MONITOR\\GSM7706\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0000",
+        "DeviceKey": "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class\\{4d36e96e-e325-11ce-bfc1-08002be10318}\\0000"
+      },
+      "AttachedDisplay": {
+        "AttachedToDesktop": true,
+        "DisplayModes": [],
+        "DeviceCaps": {
+          "Size": "600,340",
+          "Resolution": "3840,2160",
+          "LogPixels": "144,144",
+          "Aspect": "36,36",
+          "BitsPixel": 32
+        },
+        "CurrentMode": {
+          "Position": "0,0",
+          "BitsPerPixel": 32,
+          "Pels": "3840,2160",
+          "DisplayFlags": 0,
+          "DisplayFrequency": 60,
+          "DisplayFixedOutput": 0,
+          "DisplayOrientation": 0
+        },
+        "DeviceName": "\\\\.\\DISPLAY2",
+        "DeviceString": "NVIDIA GeForce GTX 650",
+        "State": 5,
+        "DeviceId": "PCI\\VEN_10DE&DEV_0FC6&SUBSYS_26503842&REV_A1",
+        "DeviceKey": "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Video\\{1D364553-A198-11EA-875B-902B34ABADFF}\\0001"
+      },
+      "MonitorArea": "0,0,3840,2160",
+      "WorkArea": "0,0,3840,2100",
+      "HKeyName": "\\REGISTRY\\MACHINE\\SYSTEM\\ControlSet001\\Enum\\DISPLAY\\GSM7706\\5&91f4c7a&0&UID4353\\Device Parameters",
+      "AttachedToDesktop": true,
+      "Primary": true,
+      "Edid": {
+        "ProductCode": "7706",
+        "Serial": "00083834",
+        "PhysicalSize": "600,340",
+        "ManufacturerCode": "GSM",
+        "Model": "LG HDR 4K",
+        "SerialNo": ""
+      },
+      "EffectiveDpi": "144,144",
+      "AngularDpi": "161,160",
+      "RawDpi": "162,161",
+      "ScaleFactor": 1.4,
+      "CapabilitiesString": null,
+      "MonitorNo": 2
+    }
+  ]
+}
