@@ -11,7 +11,7 @@
 
 Install FiraCode
 
-https://github.com/tonsky/FiraCode/releases
+https://www.nerdfonts.com/font-downloads Fira code -> Fira Code Regular Nerd Font Complete Windows Compatible.ttf
 
 ## Setup WSL
 
