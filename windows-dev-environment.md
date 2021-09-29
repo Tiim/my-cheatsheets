@@ -166,16 +166,15 @@ Host home
 cd /tmp/
 # see newest version here:
 # https://golang.org/dl/
-export GOVERSION="1.12.9"
+export GOVERSION="1.17.1"
 curl https://dl.google.com/go/go$GOVERSION.linux-amd64.tar.gz --output go$GOVERSION.linux-amd64.tar.gz
 
 # clean old go install
-sudo rm -rf /usr/local/go
-
-sudo tar -C /usr/local -xzf go$GOVERSION.linux-amd64.tar.gz
+rm -rf ~/.local/bin/go
+tar -C ~/.local/bin -xzf go$GOVERSION.linux-amd64.tar.gz
 
 # skip when updating go
-echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.zshrc
+echo 'export PATH=$PATH:~/.local/bin/go/bin' >> $HOME/.bashrc
 rm go$GOVERSION.linux-amd64.tar.gz
 cd -
 ```
