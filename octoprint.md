@@ -17,7 +17,7 @@
 `chmod +x /home/tim/mjpg-streamer-experimental/run.sh`
 
 /home/tim/mjpg-streamer-experimental/mjpg-streamer.service.sample
-```toml
+```systemd
 [Unit]
 Description=Stream video from webcam
 After=syslog.target
