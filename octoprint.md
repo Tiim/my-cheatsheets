@@ -38,14 +38,14 @@ WantedBy=multi-user.target
 ```
 * `sudo cp /home/tim/mjpg-streamer-experimental/mjpg-streamer.service.sample /lib/systemd/system/mjpg-streamer.service`
 * `sudo systemctl enable mjpg-streamer.service`
+* `sudo systemctl start mjpg-streamer.service`
 
 ```sh
-# or remove it
-$ sudo systemctl disable mjpg-streamer.service
-
-# and start/stop it
-$ sudo systemctl start mjpg-streamer.service
-$ sudo systemctl stop mjpg-streamer.service
+# Remove, start, stop, status
+sudo systemctl disable mjpg-streamer.service
+sudo systemctl start mjpg-streamer.service
+sudo systemctl stop mjpg-streamer.service
+sudo systemctl status mjpg-streamer.service
 ```
 
 It should now be available on port 8080
