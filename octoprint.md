@@ -10,6 +10,8 @@
 
 /home/tim/mjpg-streamer-experimental/run.sh
 ```sh
+#!/bin/bash
+
 ./mjpg_streamer -o "output_http.so -w ./www -p 8080" -i "input_uvc.so -d /dev/video2
 ```
 `chmod +x /home/tim/mjpg-streamer-experimental/run.sh`
