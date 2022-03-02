@@ -111,8 +111,8 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
 ## checkout dotfiles from repo
 config checkout
-## Reload .zshrc
-source ~/.zshrc
+## Reload ~/.bashrc
+source ~/.bashrc
 ```
 
 ### Nodejs
