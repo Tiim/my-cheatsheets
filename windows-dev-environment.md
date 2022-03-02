@@ -66,10 +66,17 @@ cat ~/.ssh/id_rsa.pub
 # or use the key in keepass
 mkdir ~/.ssh
 chmod 700 ~/.ssh
+
 # public key: ~/.ssh/id_rsa.pub
-vim ~/.ssh/id_rsa.pub
+cat >> ~/.ssh/id_rsa.pub << EOF
+<public key here>
+EOF
+
 # private key ~/.ssh/id_rsa
-vim ~/.ssh/id_rsa
+cat >> ~/.ssh/id_rsa << EOF
+<public key here>
+EOF
+
 # Check if files are valid
 ssh-keygen -l -f ~/.ssh/id_rsa.pub
 ssh-keygen -l -f ~/.ssh/id_rsa
