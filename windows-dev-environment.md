@@ -39,6 +39,10 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
 
 # Print domain name
 Get-WmiObject -Namespace root\cimv2 -Class Win32_ComputerSystem | Select Name
+
+# Set WSL as default ssh shell
+# https://www.hanselman.com/blog/the-easy-way-how-to-ssh-into-bash-and-wsl2-on-windows-10-from-an-external-machine
+New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\WINDOWS\System32\bash.exe" -PropertyType String -Force
 ```
 
 
