@@ -133,65 +133,6 @@ npm config set init-license MIT
 npm config set init-version 0.0.1
 ```
 
-### Enable ssh in WSL
-
-**TODO:** update this section to work in WSL 2
-[WSL Issue](https://github.com/microsoft/WSL/issues/4150)
-
-```sh
-# Uninstall and reinstall ssh-server
-sudo apt purge openssh-server
-sudo apt install openssh-server
-
-# add authorized_keys
-cd ~
-cat .ssh/id_rsa.pub > .ssh/authorized_keys
-chmod 700 .ssh
-chmod 600 .ssh/authorized_keys
-
-# Enable ssh deamon without sudo:
-sudo visudo
-
-#### After %sudo  ALL=(ALL:ALL) ALL
-# Allow ssh daemon to be started without password
-%sudo ALL=NOPASSWD: /usr/sbin/sshd
-####
-
-# Edit /etc/ssh/sshd_config and set the settings below
-sudo vim /etc/ssh/sshd_config
-
-####
-Port 2222
-PasswordAuthentication no
-####
-
-sudo service ssh --full-restart
-```
-
-Add sshd to task scheduler as described here:
-https://www.illuminiastudios.com/dev-diaries/ssh-on-windows-subsystem-for-linux/
-
-* Aufgabenplanung
-* Einfache Aufgabe erstellen (rechte sidebar)
-	* Name: `Start Bash SSH Server`
-	* Desc: `Start the SSH server inside WSL`
-* Trigger: Beim Start
-* Program starten
-	* Script: `%windir%\System32\bash.exe`
-	* Arguments: `-c "sudo /etc/init.d/ssh start"`
-
-Personaly SSH
-
-```
-# vim ~/.ssh/config
-# chmod 700 ~/.ssh/config
-
-Host home
-	HostName burgnas.synology.me
-	Port 45693
-	User tim
-```
-
 ## Install Go
 
 [Download Here](https://golang.org/dl/)
