@@ -74,7 +74,7 @@ EOF
 
 # private key ~/.ssh/id_rsa
 cat >> ~/.ssh/id_rsa << EOF
-<public key here>
+<private key here>
 EOF
 
 # Check if files are valid
