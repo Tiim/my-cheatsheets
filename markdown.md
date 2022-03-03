@@ -14,8 +14,8 @@
 ## Create PDF
   
 ```sh
-npx mdpdf file.md
+npx markdown-pdf file.md
 ```
-[Documentation](https://github.com/BlueHatbRit/mdpdf)
+[Documentation](https://www.npmjs.com/package/markdown-pdf)
 
 
