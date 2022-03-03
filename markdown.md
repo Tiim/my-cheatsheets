@@ -10,3 +10,12 @@
 ```
 * Test list item\
   On new line
+  
+## Create PDF
+  
+```sh
+npx mdpdf file.md
+```
+[Documentation](https://github.com/BlueHatbRit/mdpdf)
+
+
