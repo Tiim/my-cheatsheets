@@ -17,3 +17,8 @@ To do that, you need to modify your security policies by doing the following:
 * Navigate to Computer Configuration > Administrative Templates > Windows Components > Cloud Content 
 * Double-click on Turn off Microsoft consumer experiences.
 * Select Enabled and click on Apply and OK
+
+
+## WSL2
+
+* Get Host IP `echo $(grep -oP "(?<=nameserver ).+" /etc/resolv.conf)`
